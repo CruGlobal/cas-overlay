@@ -61,7 +61,7 @@
     </bean>
 
     <ldaptive:direct-authenticator id="authenticator"
-                                   format="${ldap.authn.searchFilter}"
+                                   format="cn=%s,ou=sso,ou=account,dc=ccci,dc=org"
                                    ldapUrl="${ldap.url}"
                                    connectTimeout="${ldap.connectTimeout}"
                                    validateOnCheckOut="${ldap.pool.validateOnCheckout}"
