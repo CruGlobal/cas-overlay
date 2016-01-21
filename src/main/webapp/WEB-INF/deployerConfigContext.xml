@@ -22,12 +22,14 @@
        xmlns:tx="http://www.springframework.org/schema/tx"
        xmlns:util="http://www.springframework.org/schema/util"
        xmlns:sec="http://www.springframework.org/schema/security"
+       xmlns:ldaptive="http://www.ldaptive.org/schema/spring-ext"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
        http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd
        http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
        http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security.xsd
-       http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+       http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd
+       http://www.ldaptive.org/schema/spring-ext http://www.ldaptive.org/schema/spring-ext.xsd" >
 
 
     <util:map id="authenticationHandlersResolvers">
@@ -43,8 +45,37 @@
     <bean id="attributeRepository" class="org.jasig.services.persondir.support.NamedStubPersonAttributeDao"
           p:backingMap-ref="attrRepoBackingMap" />
 
-    <alias name="acceptUsersAuthenticationHandler" alias="primaryAuthenticationHandler" />
+    <alias name="ldapAuthenticationHandler" alias="primaryAuthenticationHandler" />
     <alias name="personDirectoryPrincipalResolver" alias="primaryPrincipalResolver" />
+
+    <bean id="ldapAuthenticationHandler"
+          class="org.jasig.cas.authentication.LdapAuthenticationHandler"
+          p:principalIdAttribute="cn"
+          c:authenticator-ref="authenticator">
+        <property name="principalAttributeMap">
+            <map>
+                <entry key="relayGuid" value="id" />
+                <entry key="cn" value="email" />
+            </map>
+        </property>
+    </bean>
+
+    <ldaptive:direct-authenticator id="authenticator"
+                                   format="${ldap.authn.searchFilter}"
+                                   ldapUrl="${ldap.url}"
+                                   connectTimeout="${ldap.connectTimeout}"
+                                   validateOnCheckOut="${ldap.pool.validateOnCheckout}"
+                                   failFastInitialize="true"
+                                   blockWaitTime="${ldap.pool.blockWaitTime}"
+                                   idleTime="${ldap.pool.idleTime}"
+                                   usePasswordPolicy="${ldap.usePpolicy:false}"
+                                   maxPoolSize="${ldap.pool.maxSize}"
+                                   minPoolSize="${ldap.pool.minSize}"
+                                   validatePeriodically="${ldap.pool.validatePeriodically}"
+                                   validatePeriod="${ldap.pool.validatePeriod}"
+                                   prunePeriod="${ldap.pool.prunePeriod}"
+                                   useSSL="${ldap.use.ssl:false}"
+                                   useStartTLS="${ldap.useStartTLS}" />
 
     <util:map id="attrRepoBackingMap">
         <entry key="uid" value="uid" />
