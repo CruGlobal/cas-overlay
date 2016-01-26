@@ -1,0 +1,8 @@
+{
+  "@class" : "org.jasig.cas.support.saml.services.SamlRegisteredService",
+  "serviceId" : "^https://staging.visitorentrysystem.com.+",
+  "name" : "iVisitorSAMLService",
+  "id" : 10000003,
+  "evaluationOrder" : 10,
+  "metadataLocation" : "https://staging.visitorentrysystem.com/ivsaml/module.php/saml/sp/metadata.php/IVCRU_SP"
+}
