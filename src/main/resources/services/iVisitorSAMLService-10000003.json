@@ -4,5 +4,5 @@
   "name" : "iVisitorSAMLService",
   "id" : 10000003,
   "evaluationOrder" : 10,
-  "metadataLocation" : "https://staging.visitorentrysystem.com/ivsaml/module.php/saml/sp/metadata.php/IVCRU_SP"
+  "metadataLocation" : "/apps/apps-config/cas/iVisitor/sp-metadata.xml"
 }
