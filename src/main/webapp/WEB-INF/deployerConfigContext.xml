@@ -66,10 +66,10 @@
                 <!--
                    | Key is LDAP attribute name, value is principal attribute name.
                    -->
-                <entry key="relayGuid" value="id" />
+                <entry key="relayGuid" value="ssoGuid" />
                 <entry key="cn" value="email" />
-                <entry key="givenName" value="first" />
-                <entry key="sn" value="last" />
+                <entry key="givenName" value="firstName" />
+                <entry key="sn" value="lastName" />
             </map>
         </property>
     </bean>
