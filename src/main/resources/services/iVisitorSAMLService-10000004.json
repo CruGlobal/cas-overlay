@@ -1,0 +1,31 @@
+{
+  "@class" : "org.jasig.cas.support.saml.services.SamlRegisteredService",
+  "serviceId" : "^https://staging.visitorentrysystem.com.+",
+  "name" : "iVisitorSAMLService",
+  "id" : 10000003,
+  "description" : "iVisitor SAML Service",
+  "proxyPolicy" : {
+    "@class" : "org.jasig.cas.services.RefuseRegisteredServiceProxyPolicy"
+  },
+  "evaluationOrder" : 10,
+  "usernameAttributeProvider" : {
+    "@class" : "org.jasig.cas.services.DefaultRegisteredServiceUsernameProvider"
+  },
+  "logoutType" : "BACK_CHANNEL",
+  "attributeReleasePolicy" : {
+    "@class" : "org.jasig.cas.services.ReturnAllAttributeReleasePolicy",
+    "principalAttributesRepository" : {
+      "@class" : "org.jasig.cas.authentication.principal.DefaultPrincipalAttributesRepository"
+    },
+    "authorizedToReleaseCredentialPassword" : false,
+    "authorizedToReleaseProxyGrantingTicket" : false
+  },
+  "accessStrategy" : {
+    "@class" : "org.jasig.cas.services.DefaultRegisteredServiceAccessStrategy",
+    "enabled" : true,
+    "ssoEnabled" : true,
+    "requireAllAttributes" : true,
+    "caseInsensitive" : false
+  },
+  "metadataLocation" : "https://staging.visitorentrysystem.com/ivsaml/module.php/saml/sp/metadata.php/IVCRU_SP"
+}
