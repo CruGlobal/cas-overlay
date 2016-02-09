@@ -84,16 +84,6 @@
     <bean id="ldap.connection.factory.pooled" class="org.ldaptive.pool.PooledConnectionFactory"
           p:connectionPool-ref="ldap.connection.pool" />
 
-    <bean id="ldap.connection.pool.bind" parent="ldap.connection.pool"
-          p:connectionFactory-ref="ldap.connection.factory.bind" />
-
-    <bean id="ldap.connection.factory.bind" parent="ldap.connection.factory">
-        <property name="connectionConfig">
-            <bean parent="ldap.config.connection"
-                  p:responseTimeout="${connection.pool.ldap.timeout.response.bind:5000}" />
-        </property>
-    </bean>
-
     <bean id="ldap.connection.factory" class="org.ldaptive.DefaultConnectionFactory">
         <property name="connectionConfig">
             <bean parent="ldap.config.connection">
