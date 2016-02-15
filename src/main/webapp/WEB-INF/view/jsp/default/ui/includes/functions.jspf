@@ -1,0 +1,36 @@
+<!-- JavaScript Functions -->
+
+<SCRIPT LANGUAGE="JavaScript">
+
+<!-- Begin
+
+function setFocus(formN,elementN) {
+	if(document.forms.length > 0) {
+            /*
+            ** Catch exception in case the element is not 'focusable' 
+            ** (which it is in the case of non-english language display, though the reason for this is not known).
+            */
+            try {
+		document.forms[formN].elements[elementN].focus();
+            } catch(e) {
+            }
+	}
+}
+
+/*
+ ** Prevent multiple form submission.
+ */
+submitted = false;
+function submitForm()
+{
+   if(submitted)
+      return false;
+
+   submitted = true;
+
+   return true;
+}
+
+// -->
+</SCRIPT>
+
