@@ -1,0 +1,478 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*RESET --- From Eric Meyer --- www.meyerweb.com*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dd, dl, dt, li, ol, ul, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin: 0; 	padding: 0; border: 0; font-weight: inherit; font-style: inherit; font-size: 100%; line-height: 1; font-family: inherit; text-align: left; vertical-align: baseline; } a img, :link img, :visited img { border: 0; } table { border-collapse: collapse; border-spacing: 0; } ol, ul { list-style: none; } q:before, q:after, blockquote:before, blockquote:after { content: ""; }
+/*-- RESET END --*/
+
+html {
+	background: #efefef;
+	}
+
+body {
+	font-family:Helvetica, sans-serif;
+	margin:0 auto;
+	}
+
+#presentation{
+	margin:0 auto;
+	margin-top:20px;
+	width:50%;
+	z-index:1;
+	background: #fff;
+	        border-radius: 8px;
+	   -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    	    box-shadow: 0px 0px 4px 0px #999;
+	   -moz-box-shadow: 0px 0px 4px 0px #999;
+	-webkit-box-shadow: 0px 0px 4px 0px #999;
+	background-repeat:no-repeat;
+	overflow:hidden;
+	display:block;
+	}
+
+
+/*-- Both brand.css and nonbrand.css refer to the following element for logo usage. --*/
+h1{
+	width: 319px;
+	height:117px;
+	padding: 0px;
+	margin: 0 0 5px 20px;
+	background: url(./img/cru-tag.gif) no-repeat top left;
+	background-repeat:no-repeat;
+	text-indent:-9999px;
+	overflow:hidden;
+	}
+form fieldset {
+	margin: 0 auto;
+	width: 100%;
+	}
+form fieldset p{
+	font-size:11px;
+	color:#FFF;
+	margin:4px 24px 12px 24px;
+	text-align:left;
+	display: block;
+	}
+	form fieldset p:nth-child(1) {
+		margin-top: 20px;
+		}
+		form fieldset p:nth-child(3) {
+			margin-bottom: 15px;
+			}
+a{
+	color:rgba(222,124,0,100);
+	text-decoration:underline;
+	padding:1px 2px 1px 2px;
+	font-size:11px;
+	}
+	a:hover{
+		color:rgb(249,182,37,100);
+		text-decoration:none;
+		}
+form {
+	width: 90%;
+	margin: 0 auto;
+	background: #e6e6e6;
+	        border-radius: 4px;
+	   -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    	    box-shadow: inset 0px 0px 4px 0px #999;
+	   -moz-box-shadow: inset 0px 0px 4px 0px #999;
+	-webkit-box-shadow: inset 0px 0px 4px 0px #999;
+	padding: 10px 0 5px 0;
+	}
+form, form fieldset input, form fieldset textarea, form label {
+	font-family: Helvetica, Arial;
+	font-size: 10pt;
+	}
+form p { 
+	position: relative; 
+	margin: 10px 0;
+	}
+form p label { 
+	position: absolute; 
+	top: 0; 
+	left: 0;
+	font-size: 1.3em;
+	}
+form p br {display: none;}
+
+form a{
+	font-size:13px;
+	margin-left: 5.25%;
+	height: 28px;
+	display: block;
+	padding-top: 20px;
+	}
+	
+form #btn_signin {
+	position:relative;
+	top:-5px;
+	border:none;
+	width:92.5%;
+	height:30px;
+	background: #ffcc30; /* Old browsers */
+	background: -moz-linear-gradient(top, #ffcc30 0%, #f7a01a 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffcc30), color-stop(100%,#f7a01a)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #ffcc30 0%,#f7a01a 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #ffcc30 0%,#f7a01a 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #ffcc30 0%,#f7a01a 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #ffcc30 0%,#f7a01a 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcc30', endColorstr='#f7a01a',GradientType=0 ); /* IE6-9 */
+	padding: 4px 14px 5px 14px;
+	cursor:pointer;
+	color:#FFF;
+	text-shadow:0px 1px 2px #8F6916;
+	font-size: 1.4em;
+            border-radius: 4px;
+	   -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    		   box-shadow: 0px 0px 3px 0px #fff;
+		  -moz-box-shadow: 0px 0px 3px 0px #fff;
+	   -webkit-box-shadow: 0px 0px 3px 0px #fff;
+	-webkit-appearance: none;
+	}
+#service {
+	width: 320px;
+	margin: 0 auto;
+	margin-top: 40px;    
+	margin-bottom: 90px;
+	}     
+    #service h2{
+        text-align:left;
+        font-size:.70em;
+        z-index:2;
+        margin-left: 10px;
+        }
+		#service h2 span {
+			float:left;
+			margin-top: 8px;
+			color: rgba(98,96,98,100);
+			}
+    #service h2 em{
+        margin-left: 4px;
+        margin-top: -5px;
+        width: 73px;
+        height:42px;
+        display:block;
+        z-index:2;
+        background:url(./img/relay.png);
+        background-repeat:no-repeat;
+        text-indent:-9999px;
+        overflow:hidden;
+        float: left;
+        }
+    #service ul {
+        position: relative;
+        top: 7px;
+        float: left;
+        }
+        #service ul li {
+            float:left;
+            margin-left:5px;
+            }
+	#service ul li a {
+		padding:1px 2px 1px 2px;
+		display:block;
+		line-height:11px;
+		font-size: 14px;
+		}
+#status {
+	width: 80%;
+	margin: 0 auto 12px auto;
+	text-align: center;
+	}
+.error {
+	background:#FCC;
+	}
+.formErrors {
+	padding: 12px 10px 12px 50px;
+	margin: 0 0 12px 2.8%;
+	border:#C00 solid 1px;
+	color:#900;
+	text-align:left !important;
+	font-family:Helvetica, sans-serif;
+	font-size: .77em;
+	background:#FCC url(./img/exclamation.png) center no-repeat;
+	background-position:5px 50%;
+	        border-radius: 4px;
+	   -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+	}
+	.formErrors br {
+		line-height:10px;
+		}
+	.formErrors a {
+		color:#900;
+		}
+	.formErrors a:hover {
+			color:#900;
+	}	
+
+/*-- In Field Labels --*/
+
+form fieldset p input, form fieldset p textarea, form fieldset p input.password, form fieldset p textarea.password {
+	display: block;
+	padding: 3px 5px 3px 5px;
+	width: 90%;
+	height: 24px;
+	margin: 0 auto;
+	        border-radius: 4px;
+	   -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    		   box-shadow: 0px 0px 3px 0px #fff;
+		  -moz-box-shadow: 0px 0px 3px 0px #fff;
+	   -webkit-box-shadow: 0px 0px 3px 0px #fff;
+	}
+
+/*
+form fieldset p input.password, form fieldset p textarea.password {
+	width: 130px;
+	text-align:left;
+	display:block;
+	padding: 3px 5px 3px 5px;
+	}
+*/
+	
+form fieldset p label {
+	width: 100%;
+	display: block;
+	margin: 10px 5px 3px 5.5%;
+	padding: 0;
+	text-decoration: none;
+	}
+form fieldset p textarea {
+	padding: 2px;
+	width: 250px;
+	}
+form fieldset p textarea, form fieldset p input {
+	border: solid 1px #ccc;
+	}
+form fieldset p label {
+	color: #777;
+	}
+a#badge {
+    position: absolute;
+	width: 94px;
+    height: 91px;
+    top: 212px;
+    left: 492px;
+    z-index: 1000;
+	}
+	a:hover#badge  {
+		background:none;
+		}
+
+/*---------------------------------------------------------------------------/ 
+Thus begins the mobile view. 
+Also, if you close one eye and squint you'll see the firery eye of a unicorn. 
+/---------------------------------------------------------------------------*/
+@media only screen and (max-width: 669px) {
+
+html {
+	background: #ffffff;
+	}
+#presentation {
+	margin:0 auto;
+	margin-top:0px;
+	width:100%;
+	z-index:1;
+	background: #fff;
+	        border-radius: 0;
+	   -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    	    box-shadow: 0px 0px 0 0px #999;
+	   -moz-box-shadow: 0px 0px 0 0px #999;
+	-webkit-box-shadow: 0px 0px 0 0px #999;
+	overflow:hidden;
+	display:block;
+	}
+h1{
+	width: 100%;
+	height:117px;
+	padding: 0px;
+	margin: 0 auto 5px auto;
+	background: url(./img/cru-tag.gif) no-repeat top left;
+	background-repeat:no-repeat;
+	text-indent:-9999px;
+	overflow:hidden;
+	}
+form {
+	width: 90%;
+	margin: 0 auto;
+	background: #e6e6e6;
+	        border-radius: 4px;
+	   -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    	    box-shadow: inset 0px 0px 4px 0px #999;
+	   -moz-box-shadow: inset 0px 0px 4px 0px #999;
+	-webkit-box-shadow: inset 0px 0px 4px 0px #999;
+	}
+	form fieldset p input, form fieldset p textarea, form fieldset p input.password, form fieldset p textarea.password {
+		display: block;
+		padding: 3px 5px 3px 5px;
+		width: 95%;
+		height: 24px;
+		margin: 0 auto;	
+		}
+		form fieldset p input.password, form fieldset p textarea.password {
+			margin-bottom: 10px;
+			}
+	form fieldset p label {
+		width: 90%;
+		display: block;
+		margin: 10px 5px 3px 4%;
+		padding: 0;
+		text-decoration: none;
+	}
+	form a{
+		position:static;
+		left: inherit;
+		top: inherit;
+		font-size:11px;
+		margin-left: 3.5%;
+		padding-top: 10px;
+		height: 20px;
+		display: block;
+		}
+	form #btn_signin {
+		border:none;
+		width:97.5%;
+		height:30px;
+		margin: 0 auto;
+		background:rgb(249, 182, 37);
+		padding: 4px 0 5px 0;
+		cursor:pointer;
+		color:#FFF;
+		font-size: 1.3em;
+	}
+.formErrors {
+	width: 88%;
+	margin: 12px auto;
+	}
+#service {
+	width: 300px;
+	margin: 0 auto;
+	margin-top: 20px;    
+	margin-bottom: 90px;
+	}
+	#service h2 {
+        font-size:.70em;
+        z-index:2;
+        }
+    #service ul {
+        position: static;
+        margin-top: 6px;
+        }
+        #service ul li a {
+        	font-size: 12px;
+        	}
+
+} /*-- END Media Query (max-device-width: 769px) --*/
+
+/*--------------------------------------------------------------------------/ 
+Helps with giving the logo nice space to the left when in a wide mobile view.
+/--------------------------------------------------------------------------*/
+@media only screen and (min-width: 330px) and (max-width: 769px) {
+
+h1 {
+	margin-left: 20px;
+	}
+
+} /*-- END Media Query (max-device-width: 767px) --*/
+
+/*--------------------------------------------------------------------------/ 
+Large screen view for those who are fortunate to have *very* large screens.
+/--------------------------------------------------------------------------*/
+@media only screen and (min-width: 1100px) {
+
+#presentation{
+	margin:0 auto;
+	margin-top:20px;
+	width:700px;
+	z-index:1;
+	background: #fff;
+	        border-radius: 8px;
+	   -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    	    box-shadow: 0px 0px 4px 0px #999;
+	   -moz-box-shadow: 0px 0px 4px 0px #999;
+	-webkit-box-shadow: 0px 0px 4px 0px #999;
+	background-repeat:no-repeat;
+	overflow:hidden;
+	display:block;
+	}
+form {
+	width: 90%;
+	margin: 0 auto;
+	background: #e6e6e6;
+	        border-radius: 4px;
+	   -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    	    box-shadow: inset 0px 0px 4px 0px #999;
+	   -moz-box-shadow: inset 0px 0px 4px 0px #999;
+	-webkit-box-shadow: inset 0px 0px 4px 0px #999;
+	}
+	form fieldset p input, form fieldset p textarea, form fieldset p input.password, form fieldset p textarea.password {
+		display: block;
+		padding: 3px 5px 3px 20px;
+		width: 95%;
+		height: 48px;
+		margin: 0 auto;	
+		font-size: 24px;
+		}
+		form fieldset p input.password, form fieldset p textarea.password {
+			margin-bottom: 10px;
+			}
+	form fieldset p label {
+		width: 90%;
+		display: block;
+		margin: 17px 5px 3px 4%;
+		padding: 0;
+		text-decoration: none;
+		font-size: 24px;
+	}
+	form a{
+		position:static;
+		left: inherit;
+		top: inherit;
+		font-size:16px;
+		margin-left: 3.5%;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		height: 20px;
+		display: block;
+		}
+	form #btn_signin {
+		border:none;
+		width:98%;
+		height:48px;
+		margin: 0 auto;
+		background:rgb(249, 182, 37);
+		padding: 4px 0 5px 0;
+		cursor:pointer;
+		color:#FFF;
+		font-size: 24px;
+	}
+#service {
+	width: 400px;
+	margin: 0 auto;
+	margin-top: 40px;    
+	margin-bottom: 90px;
+	}
+	#service h2 {
+        font-size:.70em;
+        z-index:2;
+        }
+    #service ul {
+        position: static;
+        margin-top: 6px;
+        }
+        #service ul li a {
+        	font-size: 16px;
+        	}
+
+
+} /*-- END Media Query (max-device-width: 1100px) --*/
+

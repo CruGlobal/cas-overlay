@@ -1,0 +1,249 @@
+
+
+/*RESET --- From Eric Meyer --- www.meyerweb.com*/
+html, body, div, span,
+applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dd, dl, dt, li, ol, ul,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	line-height: 1;
+	font-family: inherit;
+	text-align: left;
+	vertical-align: baseline;
+}
+a img, :link img, :visited img {
+	border: 0;
+}
+
+a{
+	color:rgba(222,124,0,100);
+	text-decoration:underline;
+	padding:1px 2px 1px 2px;
+	}
+	a:hover{
+		color:rgb(249,182,37,100);
+		text-decoration:none;
+		}
+		
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+ol, ul {
+	list-style: none;
+}
+q:before, q:after,
+blockquote:before, blockquote:after {
+	content: "";
+}
+/*RESET END*/
+
+body {
+	background:url(./img/bg.png) repeat;
+	font-family: Arial,  sans-serif;
+	color: rgba(98,96,98,100);
+}
+
+#formFrame {
+	margin:0 auto;
+	position:relative;
+	top: 20px;
+	position:relative;
+	background:url(./img/bg_ss.png) repeat-y;
+	width:616px;
+	overflow: visible;
+	}
+	#formFrame #logo {
+		/* margin:20px 0 20px 10px; */
+		width: 616px;
+		height:73px;
+		background:url(./img/bg_ss_head.png) no-repeat;
+		display:block;
+		font-size:120%;
+		padding: 75px 0 0 100px;
+		margin: 0;
+		}
+	 h1 {
+	 	font-size: 1.3em;
+	 	margin-left: 65px;
+	 	width: auto;
+	 	color: #000;
+	 	background: none;
+	 }
+	 #formFrame h2 {
+	 	margin: 0;
+	 	}
+	 h2 {
+		width:616px;
+		height:106px;
+		background:url(./img/bg_ss_foot.png) no-repeat;
+		display:block;
+		text-indent:-9999px;
+		margin: 0;
+		}
+	
+	h2 em {
+		visibility: hidden;
+		}	
+	
+	#formFrame p {
+		font-size:.82em;
+		margin: 10px 35px 15px 68px;
+		line-height:16px;
+		}	
+
+	#formFrame p.instruct {
+		font-size:.78em;
+		font-style:italic;
+		margin: 10px 35px 25px 35px;
+		text-align:center;
+		}
+		
+	#formFrame h3 {
+		margin: 10px 10px 25px 10px;
+		}
+		#formFrame p.what {
+		font-size:.82em;
+		margin: 10px 68px 25px 68px;
+		line-height:19px;
+		}
+	#formFrame hr {
+		border: none 0; 
+		border-top: 1px solid #ccc;
+		border-bottom: 1px solid #f0f0f0;
+		width: 95%;
+		height: 2px;
+		margin:10px auto 20px auto;
+		text-align:center;
+		}
+
+	
+	form {
+		width:auto;
+		margin:0 auto;
+		margin-bottom: 30px;
+		}
+		
+	.actions{
+		position:relative;
+		left:180px;
+		}	
+	.pAction{
+	background-color: #F9B625;
+    border: medium none;
+    border-radius: 4px 4px 4px 4px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px 8px;
+    text-decoration: none;
+		}	
+		
+	.pAction:hover {
+	background-color: #DE7C00;
+    text-decoration: none;
+		}	
+		
+		form ol{
+			margin:0 auto;
+			width:425px;
+			margin-bottom: 30px;
+			}
+			form ol fieldset {
+				/* border:1px solid #ccc; */
+				margin-bottom: 20px;
+				-moz-border-radius: 5px;
+   				-webkit-border-radius: 5px;
+				}
+				form ol fieldset li h2.dynamic {
+					text-align: center;
+					margin:15px auto 20px 0;
+					font-weight:bold;
+					}
+				form ol fieldset legend {
+					padding: 5px;
+					}
+				form ol li fieldset label select + br {
+					line-height:1px;
+					}
+			form ol li label {
+				width: 150px;
+				display:block;
+				text-align:right;
+				float:left;
+				margin:0 10px 20px 20px;
+				padding-top: 5px;
+				font-size:.8em;
+				}
+				label.multi {
+				width: 160px;
+				float:left;
+				clear:both;
+				}
+			form label + input {
+				width: 180px;
+				margin:0 0 20px 0;
+				}
+			form label + select {
+				width: 180px;
+				margin:0 0 20px 0;
+				}
+			input + a {
+				font-size:.8em;
+				color:#666;
+				margin-left:20px;
+				}
+			form ol li label.identity {
+				font-size:.78em;
+				}
+
+#note {
+	width:500px;
+	margin: 10px auto 20px auto;
+	background:#D9FFF9;
+	border:#0CF 1px solid;
+   -moz-border-radius: 8px;
+   -webkit-border-radius: 8px;
+	}
+
+/* Error
+-----------------------------------*/
+
+.error {
+	width:75%;
+	padding: 10px 20px 10px 100px;
+	margin: 0 auto;
+	margin-top:30px;
+	border:#C00 solid 1px;
+	color:#900;
+	text-align:left;
+	font-family:Helvetica, sans-serif;
+	font-size: .77em;
+	background:#FCC url(./img/exclamation.png) center no-repeat;
+	background-position:35px 50%;
+	}
+	.error br {
+		line-height:10px;
+		}
+	.error a {
+		color:#900;
+		}
+		.error a:hover {
+			color:#900;}
+span .error {
+	width:520px;
+	}	
+
+/* Error END
+-----------------------------------*/
