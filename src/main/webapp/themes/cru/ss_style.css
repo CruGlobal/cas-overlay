@@ -1,0 +1,721 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*RESET --- From Eric Meyer --- www.meyerweb.com*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dd, dl, dt, li, ol, ul, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin: 0; 	padding: 0; border: 0; font-weight: inherit; font-style: inherit; font-size: 100%; line-height: 1; font-family: inherit; text-align: left; vertical-align: baseline; } a img, :link img, :visited img { border: 0; } table { border-collapse: collapse; border-spacing: 0; } ol, ul { list-style: none; } q:before, q:after, blockquote:before, blockquote:after { content: ""; }
+/*-- RESET END --*/
+
+body {
+	font-family: Arial,  sans-serif;
+	color: rgba(98,96,98,100);
+}
+
+#formFrame {
+	margin:0 auto;
+	margin-top:20px;
+	width:500px;
+	z-index:1;
+	background: #fff;
+	        border-radius: 8px;
+	   -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    	    box-shadow: 0px 0px 4px 0px #999;
+	   -moz-box-shadow: 0px 0px 4px 0px #999;
+	-webkit-box-shadow: 0px 0px 4px 0px #999;
+	background-repeat:no-repeat;
+	overflow:hidden;
+	display:block;
+	}
+	#formFrame #logo {
+		margin-left: 5px;
+		padding: 0;
+		width: 319px;
+		height:117px;
+		background:url(./img/cru-tag.gif) no-repeat;
+		
+		}
+	 h1 {
+	 	font-size: 1.3em;
+		width: 80%;
+		margin: 12px auto 0 auto;
+		padding: 24px;
+		background: #e6e6e6;
+         -webkit-border-top-left-radius: 4px;
+        -webkit-border-top-right-radius: 4px;
+             -moz-border-radius-topleft: 4px;
+            -moz-border-radius-topright: 4px;
+                 border-top-left-radius: 4px;
+                border-top-right-radius: 4px;
+	    	    box-shadow: inset 0px 0px 4px 0px #999;
+		   -moz-box-shadow: inset 0px 0px 4px 0px #999;
+		-webkit-box-shadow: inset 0px 0px 4px 0px #999;
+	 }
+
+
+    #formFrame h2{
+        text-align:left;
+        font-size: .8em;
+        z-index:2;
+        margin: 5% 0 0 5%;
+        margin-bottom: 15%;
+        display: block;
+        }
+		#formFrame h2 span {
+			float:left;
+			margin-top: 8px;
+			color: rgba(98,96,98,100);
+			}
+	    #formFrame h2 em{
+	        margin-left: 4px;
+	        margin-top: -4px;
+	        width: 46px;
+	        height:27px;
+	        display:block;
+	        z-index:2;
+	        background:url(./img/relay.png);
+	        background-repeat:no-repeat;
+	        text-indent:-9999px;
+	        overflow:hidden;
+	        float: left;
+	        }
+	
+	#formFrame p {
+		font-size:.82em;
+		margin: 10px 35px 15px 68px;
+		line-height:16px;
+		}	
+
+	#formFrame p.passcare {
+		font-size:.7em;
+		text-align: center;
+		margin: 0 5% 0 0;
+		color: #999;
+		padding: 0 0 0 5%;
+		}
+	#formFrame p.passcare br {
+		display: none;
+		}
+
+	#formFrame h3 {
+		margin: 10px 10px 25px 10px;
+		}
+		#formFrame p.what {
+		font-size:.82em;
+		line-height:19px;
+		width: 80%;
+		margin: 0 auto;
+		background: #e6e6e6;
+        -webkit-border-bottom-right-radius: 4px;
+         -webkit-border-bottom-left-radius: 4px;
+            -moz-border-radius-bottomright: 4px;
+             -moz-border-radius-bottomleft: 4px;
+                border-bottom-right-radius: 4px;
+                 border-bottom-left-radius: 4px;
+	    	    box-shadow: inset 0px 0px 4px 0px #999;
+		   -moz-box-shadow: inset 0px 0px 4px 0px #999;
+		-webkit-box-shadow: inset 0px 0px 4px 0px #999;
+		padding: 24px;
+			}
+
+	#formFrame hr {
+		border: none 0; 
+		border-top: 1px solid #ccc;
+		border-bottom: 1px solid #f0f0f0;
+		width: 95%;
+		height: 2px;
+		margin:10px auto 20px auto;
+		text-align:center;
+		}
+
+	
+	form {
+		width: 80%;
+		margin: 0 auto;
+		padding: 24px;
+		background: #e6e6e6;
+        -webkit-border-bottom-right-radius: 4px;
+         -webkit-border-bottom-left-radius: 4px;
+            -moz-border-radius-bottomright: 4px;
+             -moz-border-radius-bottomleft: 4px;
+                border-bottom-right-radius: 4px;
+                 border-bottom-left-radius: 4px;
+	    	    box-shadow: inset 0px 0px 4px 0px #999;
+		   -moz-box-shadow: inset 0px 0px 4px 0px #999;
+		-webkit-box-shadow: inset 0px 0px 4px 0px #999;
+	}
+	
+	.success {
+		width: 80%;
+		margin: 0 auto;
+		padding: 24px;
+		background: #e6e6e6;
+	            border-radius: 8px;
+	       -moz-border-radius: 8px;
+        -webkit-border-radius: 8px;
+	    	    box-shadow: inset 0px 0px 4px 0px #999;
+		   -moz-box-shadow: inset 0px 0px 4px 0px #999;
+		-webkit-box-shadow: inset 0px 0px 4px 0px #999;
+	}	
+	.actions {
+		padding-bottom: 24px;
+		}	
+		
+	.pAction{
+		border:none;
+		width:262px;
+		height:30px;
+		display: block;
+		margin: 0 auto 0 127px;
+		margin-bottom: 10px;
+		background: #ffcc30; /* Old browsers */
+		background: -moz-linear-gradient(top, #ffcc30 0%, #f7a01a 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffcc30), color-stop(100%,#f7a01a)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top, #ffcc30 0%,#f7a01a 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top, #ffcc30 0%,#f7a01a 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top, #ffcc30 0%,#f7a01a 100%); /* IE10+ */
+		background: linear-gradient(to bottom, #ffcc30 0%,#f7a01a 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcc30', endColorstr='#f7a01a',GradientType=0 ); /* IE6-9 */
+		padding: 2px 0 5px 0;
+		cursor:pointer;
+		color:#FFF;
+		text-shadow:0px 1px 2px #8F6916;
+		font-size: 1.3em;
+	            border-radius: 4px;
+		   -moz-border-radius: 4px;
+	    -webkit-border-radius: 4px;
+	    		   box-shadow: 0px 0px 3px 0px #fff;
+			  -moz-box-shadow: 0px 0px 3px 0px #fff;
+		   -webkit-box-shadow: 0px 0px 3px 0px #fff;
+		-webkit-appearance: none;
+		}	
+		
+	.pAction:hover {
+	    		   box-shadow: 0px 0px 3px 0px #666;
+			  -moz-box-shadow: 0px 0px 3px 0px #666;
+		   -webkit-box-shadow: 0px 0px 3px 0px #666;
+		}	
+		
+		form ol{
+			margin:0 auto;
+			width:100%;
+			}
+			form ol fieldset {
+				margin-bottom: 30px;
+				margin-top: 20px;
+				}
+				form ol fieldset li h2.dynamic {
+					text-align: center;
+					margin:15px auto 20px 0;
+					font-weight:bold;
+					}
+				p.dynamic {
+					color: #666;
+					font-weight: bold;
+					position: relative;
+					top: 10px;
+					left: 5px;
+					font-size: 1em !important;
+					}
+				form ol fieldset legend {
+					display: none;
+					}
+				.instruct {
+					display: none;
+					}
+					.passcare {
+						display: block;
+						}
+				form ol li fieldset label select + br {
+					line-height:1px;
+					}
+			form ol li fieldset label, form ol li label {
+				display:block;
+				text-align:right;
+				float: left;
+				margin: 12px 5px 3px 3.8%;
+				padding-top: 0;
+				font-size:.8em;
+				width: 105px;
+				}
+				label.multi {
+					width: 160px;
+					float:left;
+					clear:both;
+					}
+			form ol li fieldset input, form ol li fieldset select, form ol li input {
+				display: block;
+				padding: 3px 5px 3px 5px;
+				width: 250px;
+				height: 24px;
+				margin: 0 auto 24px 0;
+				        border-radius: 4px;
+				   -moz-border-radius: 4px;
+			    -webkit-border-radius: 4px;
+			    		   box-shadow: 0px 0px 3px 0px #fff;
+					  -moz-box-shadow: 0px 0px 3px 0px #fff;
+				   -webkit-box-shadow: 0px 0px 3px 0px #fff;
+				border: solid 1px #ccc;
+				}
+				
+				input[name="password"] {
+					margin-bottom: 5px;
+					}
+				input[name="password_confirm"] {
+					
+					}
+				input[name="first_name"] {
+					margin-bottom: 5px;
+					}
+				
+			input + a {
+				font-size:.8em;
+				color:#666;
+				margin-left:130px;
+				}
+			a.settingsCancel {
+				font-size: 1em;
+				color: #666;
+				}
+				a.settingsCancel:hover,
+				a.settingsCancel:active {
+					text-decoration: none;
+					}
+			form ol li label.identity {
+				font-size:.78em;
+				}
+/* Settings Form Elements *****************************/
+
+form ol fieldset li {
+	}
+	form ol fieldset li label {
+		display:block;
+		text-align:right;
+		float: left;
+		margin: 12px 5px 3px 3.8%;
+		padding-top: 0;
+		font-size:.8em;
+		width: 105px;
+		}
+		form ol fieldset li input, form ol fieldset li select {
+			display: block;
+			padding: 3px 5px 3px 5px;
+			width: 250px;
+			height: 24px;
+			margin: 0 auto 24px 0;
+			        border-radius: 4px;
+			   -moz-border-radius: 4px;
+		    -webkit-border-radius: 4px;
+		    		   box-shadow: 0px 0px 3px 0px #fff;
+				  -moz-box-shadow: 0px 0px 3px 0px #fff;
+			   -webkit-box-shadow: 0px 0px 3px 0px #fff;
+			border: solid 1px #ccc;
+			}
+
+
+
+#note {
+	width:500px;
+	margin: 10px auto 20px auto;
+	background:#D9FFF9;
+	border:#0CF 1px solid;
+   -moz-border-radius: 8px;
+   -webkit-border-radius: 8px;
+	}
+
+/* Error
+-----------------------------------*/
+
+.error {
+	width: 75%;
+	padding: 12px 10px 12px 50px;
+	margin: 0 auto;
+	margin-top: 12px;
+	border:#C00 solid 1px;
+	color:#900;
+	text-align:left !important;
+	font-family:Helvetica, sans-serif;
+	font-size: .77em;
+	background:#FCC url(./img/exclamation.png) center no-repeat;
+	background-position:5px 50%;
+	        border-radius: 4px;
+	   -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+	}
+	.error br {
+		line-height:10px;
+		}
+	.error a {
+		color:#900;
+		}
+		.error a:hover {
+			color:#900;}
+span .error {
+	width:50%;
+	}	
+
+/* Error END
+-----------------------------------*/
+
+/*---------------------------------------------------------------------------/ 
+Thus begins the mobile view. 
+Also, if you close one eye and squint you'll see the firery eye of a unicorn. 
+/---------------------------------------------------------------------------*/
+@media only screen and (max-width: 669px) {
+
+html {
+	background: #ffffff;
+	}
+#formFrame {
+	margin:0 auto;
+	margin-top:0px;
+	width:100%;
+	z-index:1;
+	background: #fff;
+	        border-radius: 0;
+	   -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    	    box-shadow: 0px 0px 0 0px #999;
+	   -moz-box-shadow: 0px 0px 0 0px #999;
+	-webkit-box-shadow: 0px 0px 0 0px #999;
+	overflow:hidden;
+	display:block;
+	}
+h1{
+	width: 90%
+	margin: 0 auto;
+	padding: 12px 24px;
+	}
+h2 {
+	margin: 20px auto;
+	text-align: center;
+	}
+form {
+	width: 80%;
+	margin: 0 auto;
+	padding: 6px 24px;
+	background: #e6e6e6;
+    -webkit-border-bottom-right-radius: 4px;
+     -webkit-border-bottom-left-radius: 4px;
+        -moz-border-radius-bottomright: 4px;
+         -moz-border-radius-bottomleft: 4px;
+            border-bottom-right-radius: 4px;
+             border-bottom-left-radius: 4px;
+    	    box-shadow: inset 0px 0px 4px 0px #999;
+	   -moz-box-shadow: inset 0px 0px 4px 0px #999;
+	-webkit-box-shadow: inset 0px 0px 4px 0px #999;
+	}
+
+	form ol li fieldset label, form ol fieldset li label, form ol li label {
+		display:block;
+		text-align:left;
+		margin:12px 0 0 3.8%;
+		padding: 0;
+		font-size:.8em;
+		width: 100%;
+		float: none;
+		}
+		
+	form ol li fieldset input, form ol li fieldset select, form ol fieldset li input, form ol fieldset li select, form ol li input {
+		display: block;
+		padding: 3px 5px 3px 5px;
+		width: 90%;
+		height: 24px;
+		margin: 0 auto 24px auto;
+		        border-radius: 4px;
+		   -moz-border-radius: 4px;
+	    -webkit-border-radius: 4px;
+	    		   box-shadow: 0px 0px 3px 0px #fff;
+			  -moz-box-shadow: 0px 0px 3px 0px #fff;
+		   -webkit-box-shadow: 0px 0px 3px 0px #fff;
+		border: solid 1px #ccc;
+		}
+
+	p.dynamic {
+		color: #666;
+		font-weight: bold;
+		position: relative;
+		top: 0;
+		left: -50px;
+		font-size: 1em !important;	
+		}
+			
+	.pAction{		
+		width:92.5%;
+		margin: 0 auto;
+		margin-bottom: 10px;		
+		}
+/*
+	form ol fieldset {
+		border:1px solid #ccc;
+		border-top: none;
+		margin-top: 24px;
+		}
+*/
+	form a{
+		position:static;
+		left: inherit;
+		top: inherit;
+		font-size:11px;
+		margin-left: 3.5%;
+		padding-top: 10px;
+		height: 20px;
+		display: block;
+		}
+	form #btn_signin {
+		border:none;
+		width:97.5%;
+		height:30px;
+		margin: 0 auto;
+		background:rgb(249, 182, 37);
+		padding: 4px 0 5px 0;
+		cursor:pointer;
+		color:#FFF;
+		font-size: 1.3em;
+	}
+	#formFrame p.passcare br {
+		display: block;
+		}
+#service {
+	width: 300px;
+	margin: 0 auto;
+	margin-top: 40px;    
+	margin-bottom: 90px;
+	}
+	#service h2 {
+        font-size:.70em;
+        z-index:2;
+        }
+    #service ul {
+        position: static;
+        margin-top: 6px;
+        }
+        #service ul li a {
+        	font-size: 11px;
+        	}
+#formFrame ul.selfNavHold
+	{
+	width: 80%;
+	margin: 0 auto;
+	padding: 6px 24px;
+	}
+
+/* Error
+-----------------------------------*/
+
+span .error {
+	width:75%;
+	}	
+
+} /*-- END Media Query (max-device-width: 769px) --*/
+
+
+
+/*--------------------------------------------------------------------------/ 
+Large screen view for those who are fortunate to have *very* large screens.
+/--------------------------------------------------------------------------*/
+@media only screen and (min-width: 1100px) {
+
+#formFrame {
+	margin:0 auto;
+	margin-top:20px;
+	width:600px;
+	z-index:1;
+	background: #fff;
+	        border-radius: 8px;
+	   -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    	    box-shadow: 0px 0px 4px 0px #999;
+	   -moz-box-shadow: 0px 0px 4px 0px #999;
+	-webkit-box-shadow: 0px 0px 4px 0px #999;
+	background-repeat:no-repeat;
+	overflow:hidden;
+	display:block;
+	}
+	#formFrame #logo {
+		margin-left: 3%;
+		}
+	 h1 {
+	 	font-size: 1.5em;
+	 }
+/*
+	 h2 {
+		width:616px;
+		height:106px;
+		background:url(./img/bg_ss_foot.png) no-repeat;
+		display:block;
+		text-indent:-9999px;
+		margin-top:20px;
+		}
+*/	
+	h2 {
+		margin-left: 5%;
+		}
+	h2 span {color: #f00;}	
+	
+	#formFrame p {
+		font-size:.82em;
+		margin: 10px 35px 15px 68px;
+		line-height:16px;
+		}	
+
+	#formFrame p.passcare {
+		font-size:.7em;
+		text-align: center;
+		margin-left:110px;
+		color: #999;
+		padding: 0 0 0 5%;
+		}
+	#formFrame p.passcare br{
+		display: none;
+		}
+
+	#formFrame h3 {
+		margin: 10px 10px 25px 10px;
+		}
+		#formFrame p.what {
+		font-size:.9em;
+		padding: 24px;
+			}
+	#formFrame hr {
+		border: none 0; 
+		border-top: 1px solid #ccc;
+		border-bottom: 1px solid #f0f0f0;
+		width: 95%;
+		height: 2px;
+		margin:10px auto 20px auto;
+		text-align:center;
+		}
+
+	
+	form {
+		width: 80%;
+		margin: 0 auto;
+		padding: 24px;
+		background: #e6e6e6;
+	    	    box-shadow: inset 0px 0px 4px 0px #999;
+		   -moz-box-shadow: inset 0px 0px 4px 0px #999;
+		-webkit-box-shadow: inset 0px 0px 4px 0px #999;
+		}
+
+		
+	.pAction{
+		border:none;
+		width:311px;
+		height:30px;
+		display: block;
+		margin: 0 auto;
+		position: relative;
+		left: 158px;
+		margin-bottom: 10px;
+		padding: 2px 0 5px 0;
+		cursor:pointer;
+		color:#FFF;
+		text-shadow:0px 1px 2px #8F6916;
+		font-size: 1.3em;
+		}	
+		
+	.pAction:hover {
+	    		   box-shadow: 0px 0px 3px 0px #666;
+			  -moz-box-shadow: 0px 0px 3px 0px #666;
+		   -webkit-box-shadow: 0px 0px 3px 0px #666;
+		}	
+		
+		form ol{
+			margin:0 auto;
+			width:100%;
+			}
+			form ol fieldset {
+				border:1px solid #ccc;
+				border: none;
+				margin-top: 24px;
+				}
+				form ol fieldset li h2.dynamic {
+					text-align: center;
+					margin:15px auto 20px 0;
+					font-weight:bold;
+					}
+				form ol fieldset legend {
+					padding: 5px;
+					text-align: center;
+					}
+				form ol li fieldset label select + br {
+					line-height:1px;
+					}
+/*			
+			form ol li label {
+				display:block;
+				text-align:left;
+				margin:0 0 20px 0;
+				padding-top: 5px;
+				font-size:.8em;
+				}
+*/				
+			form ol li fieldset label, form ol fieldset li label, form ol li label {
+				display:block;
+				text-align:right;
+				float: left;
+				margin: 12px 5px 3px 3.8%;
+				padding-top: 0;
+				font-size:1em;
+				width: 135px;
+				}
+
+				label.multi {
+					width: 160px;
+					float:left;
+					clear:both;
+					}
+			form ol li fieldset input, form ol li fieldset select, form ol fieldset li input, form ol fieldset li select, form ol li input  {
+				display: block;
+				padding: 3px 5px 3px 5px;
+				width: 300px;
+				float: left;
+				height: 24px;
+				margin: 0 auto 24px auto;
+				        border-radius: 4px;
+				   -moz-border-radius: 4px;
+			    -webkit-border-radius: 4px;
+			    		   box-shadow: 0px 0px 3px 0px #fff;
+					  -moz-box-shadow: 0px 0px 3px 0px #fff;
+				   -webkit-box-shadow: 0px 0px 3px 0px #fff;
+				border: solid 1px #ccc;
+				}
+				form ol li fieldset select {
+					height: 30px;
+					width: 300px;
+					margin-right: 20px;
+					margin-bottom: 4px;
+					}
+				
+				input[name="password"] {
+					}
+				input[name="password_confirm"] {
+					
+					}
+				
+			input + a {
+				font-size:.8em;
+				color:#666;
+				margin-left:163px;
+				}
+			form ol li label.identity {
+				font-size:.78em;
+				}
+
+#note {
+	width:500px;
+	margin: 10px auto 20px auto;
+	background:#D9FFF9;
+	border:#0CF 1px solid;
+   -moz-border-radius: 8px;
+   -webkit-border-radius: 8px;
+	}
+
+#formFrame ul.selfNavHold li a.selfNav{
+	border:none;
+	height:35px;
+	display: block;
+	font-size: 1.5em;
+	padding-top: 15px;
+
+} /*-- END Media Query (max-device-width: 1100px) --*/
