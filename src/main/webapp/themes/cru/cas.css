@@ -34,11 +34,11 @@ body {
 
 /*-- Both brand.css and nonbrand.css refer to the following element for logo usage. --*/
 h1{
-	width: 319px;
+	width: 240px;
 	height:117px;
 	padding: 0px;
 	margin: 0 0 5px 20px;
-	background: url(./img/cru-tag.gif) no-repeat top left;
+	background: url(./img/cru-tag.png) no-repeat top left;
 	background-repeat:no-repeat;
 	text-indent:-9999px;
 	overflow:hidden;
@@ -293,7 +293,7 @@ h1{
 	height:117px;
 	padding: 0px;
 	margin: 0 auto 5px auto;
-	background: url(./img/cru-tag.gif) no-repeat top left;
+	background: url(./img/cru-tag.png) no-repeat top left;
 	background-repeat:no-repeat;
 	text-indent:-9999px;
 	overflow:hidden;
